@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var db = require('./lib/db');
 var history = require('connect-history-api-fallback');
-
+const path = require('path');
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
