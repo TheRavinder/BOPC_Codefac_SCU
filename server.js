@@ -22,7 +22,7 @@ app.use(express.static(DIST_DIR));
 app.use(require('./routes/api'));
 
 app.get("*", function (req, res) {  
-  res.sendFile(path.join(DIST_DIR, "index.html"));
+  res.sendFile(path.join(DIST_DIR));
 });
 
 
