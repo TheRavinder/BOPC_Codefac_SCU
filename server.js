@@ -20,7 +20,7 @@ app.all('/', function(req, res, next) {
 
 app.use(require('./routes/api'));
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3000;
 
 app.listen(port, () => {
 	console.log("Listening to port " + port);

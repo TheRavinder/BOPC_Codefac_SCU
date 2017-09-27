@@ -22,10 +22,10 @@ export class BooklistComponent implements OnInit {
   }
 
   ngOnInit() {
-  	this.productService.getAllBooks().subscribe(bookList => {
-  		this.productList = bookList;
-  		console.log(this.productList);
-  	});
+    this.productService.getAllBooks().subscribe(bookList => {
+      this.productList = bookList;
+      console.log(this.productList);
+    });
   }
 
   navigateToBook(book) {
@@ -33,7 +33,7 @@ export class BooklistComponent implements OnInit {
       queryParams: {
         book: JSON.stringify(book)
       }
-    })
+    });
   }
 
 }
