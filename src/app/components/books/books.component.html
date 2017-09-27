@@ -1,0 +1,25 @@
+<div class="container">
+	<h1 class="well">List of Products</h1>
+	<hr>
+	<a class="btn btn-info" routerLink="/manage/product/add">Add a Product to list</a>
+	<br>
+	<hr>
+<h2>Current Products</h2>
+	<table class="table table-bordered">
+	  <tr>
+	  	<th>ID</th>
+	  	<th>Product Name</th>
+	  	<th>Category</th>
+	  	<th></th>
+	  	<th></th>
+	  </tr>
+
+	 	<tr *ngFor="let product of productList">
+	 		<td>{{ product._id }}</td>
+	 		<td>{{ product.title }}</td>
+	 		<td>{{ product.category }}</td>
+	 		<td><Button class="btn btn-primary" routerLink="/manage/product/add/{{ product._id }}">Edit</Button></td>
+	 		<td><Button class="btn btn-danger" (click)="deleteBook(product._id)">Delete</Button></td>
+	 	</tr>
+	</table>
+</div>

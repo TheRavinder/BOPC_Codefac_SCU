@@ -1,0 +1,23 @@
+<h1 class ="well"> Product Information</h1>
+<div class="container" *ngIf="Product">
+	<div class="col-md-4 col-sm-4">
+		<img src="{{ Product.cover }}" width="100%">
+	</div>
+
+	<div class="col-md-8 col-sm-8">
+		<h2 class="well">{{ Product.title }}</h2>
+		<ul class="bookInfo">
+			<li>Category: {{ Product.category }}</li>
+			<li> Brand: {{ Product.author }}</li>
+			<li>Availability:<strong class="text-success"> {{ Product.publisher }}</strong></li>
+		</ul>
+		<br>
+		<div class="price"><span>PRICE : </span><strong>${{ Product.price }}</strong></div>
+		<hr>
+		<h4 class="lead">Description</h4>
+		<p>{{ Product.description }}</p>
+		<hr>
+		<a class="btn btn-success" (click)="addToCart()">Add To Cart</a>
+	</div>
+	
+</div>

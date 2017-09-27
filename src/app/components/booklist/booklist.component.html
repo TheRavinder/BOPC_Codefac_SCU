@@ -1,0 +1,17 @@
+<div class="container">
+	<h1 class="well">Products</h1>
+	<hr>
+	<div class="row"  >
+		<div class="col-md-3 col-sm-3" *ngFor="let product of productList">
+			<img src="{{ product.cover }}" class="thumbnail">
+			<h4 class="title">{{ product.title }}</h4>
+			<div class="description">
+				<small>{{ product.description.substring(0,50) }}...</small>
+			</div>
+			<br>
+			<div class="price">Price<strong>${{ product.price }}</strong></div>
+			<br>
+			<a routerLink="product/{{product._id}}" class="btn btn-primary btn-block">View Product</a>
+		</div>
+	</div>
+</div>
