@@ -22,6 +22,9 @@ app.all('/', function(req, res, next) {
 app.use(express.static(__dirname +'/dist/'));
 app.use(require('./routes/api'));
 
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  });
 
 app.use(history());
 
