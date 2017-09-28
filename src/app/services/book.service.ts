@@ -15,8 +15,10 @@ export class BookService {
   }
 
   getAllBooks() {
-  	let searchUrl = "/api/books";
-  	return this.http.get(searchUrl).map(res => res.json());
+    let searchUrl = "/api/books";
+     console.log(this.http.get(searchUrl).map(res => res.json()));
+    return this.http.get(searchUrl).map(res => res.json());
+ 
   }
 
   getBookById(id) {
