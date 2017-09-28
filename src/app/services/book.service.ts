@@ -22,12 +22,12 @@ export class BookService {
   }
 
   getBookById(id) {
-    let searchUrl = "/api/book?bookId=" + id;
+    let searchUrl = "/book?bookId=" + id;
     return this.http.get(searchUrl).map(res => res.json());
   }
 
   deleteBookById(id) {
-    let searchUrl = "/api/book?bookId=" + id;
+    let searchUrl = "/book?bookId=" + id;
     console.log(id);
     return this.http.delete(searchUrl).map(res => res.json());
   }
