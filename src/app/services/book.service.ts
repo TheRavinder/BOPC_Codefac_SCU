@@ -15,7 +15,7 @@ export class BookService {
   }
 
   getAllBooks() {
-    let searchUrl = "/api/books";
+    let searchUrl = "/books";
      console.log(this.http.get(searchUrl).map(res => res.json()));
     return this.http.get(searchUrl).map(res => res.json());
  
@@ -27,13 +27,13 @@ export class BookService {
   }
 
   deleteBookById(id) {
-    let searchUrl = "http://localhost:5000/book?bookId=" + id;
+    let searchUrl = "/api/book?bookId=" + id;
     console.log(id);
     return this.http.delete(searchUrl).map(res => res.json());
   }
 
   addBook(bookData) {
-    let searchUrl = "http://localhost:5000/book";
+    let searchUrl = "/book";
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
     let options = new RequestOptions({
@@ -44,7 +44,7 @@ export class BookService {
   }
 
   updateBook(bookData) {
-    let searchUrl = "http://localhost:5000/book";
+    let searchUrl = "/book";
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
     let options = new RequestOptions({
