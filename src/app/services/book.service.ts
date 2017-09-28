@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
+
 @Injectable()
 export class BookService {
 	http: any;
@@ -14,12 +15,12 @@ export class BookService {
   }
 
   getAllBooks() {
-  	let searchUrl = "http://localhost:5000/books";
+  	let searchUrl = "/api/books";
   	return this.http.get(searchUrl).map(res => res.json());
   }
 
   getBookById(id) {
-    let searchUrl = "http://localhost:5000/book?bookId=" + id;
+    let searchUrl = "/api/book?bookId=" + id;
     return this.http.get(searchUrl).map(res => res.json());
   }
 
