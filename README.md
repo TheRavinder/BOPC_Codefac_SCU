@@ -5,10 +5,21 @@ This e-commerce Single Page Application project is a built on the MEAN Stack (Mo
 
 ### User Section
 
+![screen shot 2017-07-27 at 11 46 18 am](https://user-images.githubusercontent.com/31406525/31040321-6c147dfe-a5c9-11e7-930d-ed14c903f679.png)
 
+
+![screen shot 2017-07-27 at 11 46 02 am](https://user-images.githubusercontent.com/31406525/31040324-74f72a98-a5c9-11e7-969f-74b6a0c710a7.png)
+
+![screen shot 2017-07-27 at 11 46 47 am](https://user-images.githubusercontent.com/31406525/31040328-79a6d9da-a5c9-11e7-8427-822eef307840.png)
+
+![screen shot 2017-07-27 at 11 47 06 am](https://user-images.githubusercontent.com/31406525/31040349-bf13db12-a5c9-11e7-9043-c36f7e89138c.png)
 
 
 ### Admin Section
+
+![screen shot 2017-07-27 at 11 48 01 am](https://user-images.githubusercontent.com/31406525/31040357-d50815dc-a5c9-11e7-822b-97dd868ac52c.png)
+
+![screen shot 2017-07-27 at 11 48 19 am](https://user-images.githubusercontent.com/31406525/31040358-d76a3f9e-a5c9-11e7-9796-e296d87baa7e.png)
 
 
 
